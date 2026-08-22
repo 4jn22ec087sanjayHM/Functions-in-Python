@@ -114,6 +114,43 @@ Topics practiced:
 ## 2. LEGB Rule
 
 Python searches for variables in this order:
+# Day 03 — Scope, Lambda & Higher-Order Functions 🐍
+
+Today I continued my practical journey toward mastering Python Functions.
+
+## 📚 Topics Covered
+
+### Scope & LEGB
+- Local Scope
+- Global Scope
+- Enclosing Scope
+- Built-in Scope
+- Variable Shadowing
+- LEGB Rule
+- `global` keyword
+- `nonlocal` keyword
+- `UnboundLocalError`
+
+### Lambda Functions
+- Creating lambda functions
+- Lambda with multiple parameters
+- Conditional expressions in lambda
+- When to use lambda
+
+### Higher-Order Functions
+- Passing functions as arguments
+- Using functions as parameters
+- Creating reusable functions that accept other functions
+
+### `map()`
+Used to transform every element of an iterable.
+
+```python
+numbers = [2, 4, 6, 8, 10]
+
+result = list(map(lambda x: x * 2, numbers))
+
+print(result)
 
 ```text
 L → Local
