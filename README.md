@@ -87,3 +87,36 @@ Python Functions — Beginner → Advanced → Professional
 More exercises, debugging challenges, advanced concepts, and a real-world function-based project will be added as I progress.
 
 #Python #PythonProgramming #LearningInPublic #SoftwareDevelopment
+# Day 03 — Scope, Lambda & Higher-Order Functions 🐍
+
+Today I continued my practical journey toward mastering Python Functions.
+
+The focus was on understanding how Python handles variables inside different scopes and how functions can be treated as objects and passed to other functions.
+
+---
+
+## 📚 Topics Covered
+
+### 1. Scope
+
+Learned how the accessibility of a variable depends on where it is created.
+
+Topics practiced:
+
+- Local scope
+- Global scope
+- Enclosing scope
+- Built-in scope
+- Variable shadowing
+
+---
+
+## 2. LEGB Rule
+
+Python searches for variables in this order:
+
+```text
+L → Local
+E → Enclosing
+G → Global
+B → Built-in
