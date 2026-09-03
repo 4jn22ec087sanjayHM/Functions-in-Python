@@ -157,3 +157,290 @@ L → Local
 E → Enclosing
 G → Global
 B → Built-in
+# Employee Management & Payroll System
+
+A console-based **Employee Management & Payroll System** built with Python to practice and apply core Python programming concepts, especially functions and functional programming techniques.
+
+This project was developed as a hands-on learning project to understand how different Python concepts can be combined to build a practical application.
+
+---
+
+## 🚀 Features
+
+The application currently provides the following functionality:
+
+* Add new employees
+* Display all employees
+* Search employees by ID
+* Calculate salary with a 10% bonus
+* Filter employees based on salary
+* Sort employees by salary
+* Handle employees that are not found
+* Console-based user interaction
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3**
+* Lists
+* Dictionaries
+* Functions
+* Lambda functions
+* `filter()`
+* `sorted()`
+* Loops
+* Conditional statements
+* Exception-safe input handling
+* Return values and `None`
+
+---
+
+## 📚 Python Concepts Practiced
+
+This project was created after learning and practicing the following Python concepts:
+
+### Functions
+
+* Function creation and calling
+* Parameters and arguments
+* Default and keyword arguments
+* `*args` and `**kwargs`
+* Multiple return values
+* Scope and LEGB
+* `global` and `nonlocal`
+
+### Functional Programming
+
+* Lambda functions
+* Higher-order functions
+* `filter()`
+* `map()`
+* `sorted()`
+* `reduce()`
+
+### Advanced Function Concepts
+
+* Nested functions
+* Closures
+* Decorators
+* `functools.wraps`
+* Recursion
+* Generators
+* `yield`
+* Function annotations
+* Positional-only arguments
+* Keyword-only arguments
+
+Not every concept learned was forced into the project. Concepts were used where they were appropriate for the application's functionality.
+
+---
+
+## 🖥️ Application Workflow
+
+The application follows a simple console-based workflow:
+
+```text
+Start Application
+       ↓
+Add Employee
+       ↓
+Display Employees
+       ↓
+Search Employee
+       ↓
+Calculate Salary + Bonus
+       ↓
+Filter Employees
+       ↓
+Sort Employees
+       ↓
+Exit
+```
+
+---
+
+## 📊 Example Employee Data
+
+The application stores employee information using Python dictionaries inside a list.
+
+Example:
+
+```python
+employees = [
+    {
+        "id": 1,
+        "name": "Sanjay HM",
+        "age": 22,
+        "department": "Development",
+        "salary": 50000.0
+    }
+]
+```
+
+---
+
+## 💰 Salary Calculation
+
+The application calculates a **10% bonus** based on the employee's salary.
+
+For example:
+
+```text
+Salary: ₹50,000
+Bonus: ₹5,000
+----------------
+Total: ₹55,000
+```
+
+---
+
+## 🔎 Employee Search
+
+Employees can be searched using their employee ID.
+
+If an employee exists:
+
+```text
+Enter employee ID: 1
+
+ID: 1
+Name: Sanjay HM
+Age: 22
+Department: Development
+Salary: 50000.0
+```
+
+If the employee does not exist:
+
+```text
+Enter employee ID: 99
+
+Employee not found
+```
+
+---
+
+## 🔍 Salary Filtering
+
+The project uses `filter()` with a lambda function to find employees whose salary meets a specified minimum.
+
+Example:
+
+```python
+filtered_employees = filter(
+    lambda emp: emp["salary"] >= minimum_salary,
+    employees
+)
+```
+
+If the minimum salary is ₹50,000, employees earning ₹50,000 or more are displayed.
+
+---
+
+## 📈 Employee Sorting
+
+The project uses `sorted()` with a lambda function to sort employees according to their salary.
+
+Example:
+
+```python
+sorted_employees = sorted(
+    employees,
+    key=lambda emp: emp["salary"]
+)
+```
+
+This allows employees to be displayed from the lowest salary to the highest salary.
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+```
+
+### 2. Navigate into the project
+
+```bash
+cd Employee-Management-System
+```
+
+### 3. Run the Python application
+
+```bash
+python console-based_Python_application.py
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+Employee-Management-System/
+│
+├── console-based_Python_application.py
+└── README.md
+```
+
+---
+
+## 🎯 Learning Objective
+
+The main objective of this project was to move beyond individual Python exercises and understand how Python concepts work together inside a complete application.
+
+Through this project, I practiced:
+
+```text
+Python Basics
+     ↓
+Functions
+     ↓
+Functional Programming
+     ↓
+Data Handling
+     ↓
+Application Logic
+     ↓
+Console Application
+```
+
+---
+
+## 🔮 Future Improvements
+
+This project will be improved as I learn more Python concepts.
+
+Planned improvements include:
+
+* Convert the application to an OOP-based design
+* Introduce classes and objects
+* Add encapsulation
+* Implement inheritance
+* Implement polymorphism
+* Add abstraction
+* Add proper exception handling
+* Store employee data permanently
+* Add database integration
+* Add a graphical or web interface
+* Add automated testing
+* Improve project architecture
+
+---
+
+## 👨‍💻 Author
+
+**Sanjay HM**
+
+This project is part of my journey toward becoming a professional Python developer.
+
+---
+
+## ⭐ Project Status
+
+**Completed — Initial Version**
+
+The current version focuses on Python functions and functional programming concepts. Future versions will evolve as I progress into Object-Oriented Programming, databases, APIs, and backend development.
